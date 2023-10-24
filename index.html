@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Iman</title>
+	<link rel="stylesheet" href="style.css" />
+	<script src="index.js" defer></script>
+</head>
+
+<body class="grayscale">
+	<div class="container vertical-center">
+		<div class="item-container">
+			<img src="camera.png" alt="" onclick="openCamera()">
+			<input id="fileInput" type="file" accept="image/*" capture="camera" style="display: none;">
+		</div>
+		<div class="item-container">
+			<img src="history.png" alt="">
+		</div>
+		<select id="fileLabel" name="">
+			<option value="QR">QR</option>
+			<option value="Picture">Item Image</option>
+		</select>
+		<div id="uploadedFiles"></div>
+		<button onclick="submitFiles()">SUBMIT</button>
+	</div>
+</body>
+
+</html>
